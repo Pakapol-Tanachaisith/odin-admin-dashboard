@@ -21,7 +21,7 @@
   <div class="container dashboard">
     <aside id="sidebar">
       <div class="sidebar-header">
-        <img src="assets/icons/dashboard.svg" role="presentation">
+        <img class="icon-xl" src="assets/icons/dashboard.svg" role="presentation">
         <p>Dashboard</p>
       </div>
 
@@ -70,7 +70,39 @@
         </nav>
       </div>
     </aside>
-    <header id="header">Header</header>
+
+    <header id="header">
+      <div>
+        <div class="search-box">
+          <img class="icon" src="assets/icons/search.svg" alt="search icon">
+          <input type="text">
+        </div>
+        <div>
+          <img class="icon" src="assets/icons/notification.svg" alt="notifications">
+          <figure>
+            <img class="avatar" src="assets/images/user-avatar.png" alt="John">
+            <figcaption>John</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="topbar">
+        <div class="current-user">
+          <img class="big-avatar" src="assets/images/user-avatar.png" alt="John">
+          <div>
+            <p>Hi there,</p>
+            <p>John Doe (@john)</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
+
     <main id="main-content">Main Content</main>
   </div>
 </body>

@@ -5,12 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
   <title>Admin Dashboard</title>
 </head>
 
 <body>
   <div class="container dashboard">
-    <aside id="sidebar">Sidebar</aside>
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/icons/dashboard.svg" role="presentation">
+        <p>Dashboard</p>
+      </div>
+
+      <div class="sidebar-items">
+        <nav>
+          <a href="#">
+            <img class="icon" src="assets/icons/home.svg" role="presentation">
+            <span>Home</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/profile.svg" role="presentation">
+            <span>Profile</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/message.svg" role="presentation">
+            <span>Message</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/history.svg" role="presentation">
+            <span>History</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/tasks.svg" role="presentation">
+            <span>Tasks</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/community.svg" role="presentation">
+            <span>Communities</span>
+          </a>
+        </nav>
+
+        <nav>
+          <a href="#">
+            <img class="icon" src="assets/icons/settings.svg" role="presentation">
+            <span>Settings</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/support.svg" role="presentation">
+            <span>Support</span>
+          </a>
+          <a href="#">
+            <img class="icon" src="assets/icons/privacy.svg" role="presentation">
+            <span>Privacy</span>
+          </a>
+
+        </nav>
+      </div>
+    </aside>
     <header id="header">Header</header>
     <main id="main-content">Main Content</main>
   </div>

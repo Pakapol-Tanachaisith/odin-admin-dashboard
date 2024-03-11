@@ -173,7 +173,20 @@ body {
   height: auto;
 }
 
-.avatar {
+.icon-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  aspect-ratio: 1/1;
+
+  svg {
+    width: 20px;
+    stroke: #475569;
+    fill: #475569;
+  }
+}
+
+.avatar-sm {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -181,7 +194,15 @@ body {
   cursor: pointer;
 }
 
-.big-avatar {
+.avatar-md {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.avatar-bg {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -349,5 +370,119 @@ body {
 /* ---Main Content--- */
 #main-content {
   background-color: #e2e8f0;
+  padding: 30px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 32px;
+
+  overflow: auto;
+
+  h2 {
+    font-weight: bold;
+  }
 }
+
+#main-content .project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.card {
+  background-color: white;
+  position: relative;
+  padding: 24px 32px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  .card-decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background-color: #eab308;
+  }
+
+  .card-title {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .card-content {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    flex-grow: 1;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .card-actions {
+    display: flex;
+    gap: 18px;
+  }
+}
+
+#main-content > div {
+  .announcement {
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    .announcement-item {
+      border-bottom: 1px solid #cbd5e1;
+      padding: 15px 0;
+    }
+
+    div:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .trending {
+    margin-top: 48px;
+
+    .card {
+      padding: 24px;
+    }
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    .trending-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .trending-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .trending-item {
+      p:first-child {
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      p:nth-child(2) {
+        font-size: 14px;
+        color: #64748b;
+      }
+    }
+  }
+}
+
 /* ---Main Content--- */
